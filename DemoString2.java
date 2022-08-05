@@ -1,0 +1,39 @@
+import java.util.*;
+public class DemoString2
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+
+System.out.println("Enter the String");
+String str= sc.nextLine();
+int len=str.length();
+System.out.println("========Choice===========");
+System.out.println("1.Normal String\n 2.Reverse of String");
+
+System.out.println("Enter the choice");
+int choice= sc.nextInt();
+
+switch(choice)
+{
+case 1:
+for( int i=0; i<=len-1;i++)
+{
+char ch1=str.charAt(i);
+System.out.print(ch1);
+}
+break;
+case 2:
+for(int j=len-1; j>=0; j--)
+{
+char ch2=str.charAt(j);
+System.out.print(ch2);
+}
+break;
+default:
+System.out.println("Invalid Choice");
+}
+sc.close();
+}
+
+}
